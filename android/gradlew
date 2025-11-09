@@ -1,7 +1,11 @@
 #!/bin/sh
 
 #
+<<<<<<< HEAD
 # Copyright © 2015-2021 the original authors.
+=======
+# Copyright © 2015 the original authors.
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +19,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+<<<<<<< HEAD
+=======
+# SPDX-License-Identifier: Apache-2.0
+#
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
 
 ##############################################################################
 #
@@ -84,7 +93,11 @@ done
 # shellcheck disable=SC2034
 APP_BASE_NAME=${0##*/}
 # Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
+<<<<<<< HEAD
 APP_HOME=$( cd "${APP_HOME:-./}" > /dev/null && pwd -P ) || exit
+=======
+APP_HOME=$( cd -P "${APP_HOME:-./}" > /dev/null && printf '%s\n' "$PWD" ) || exit
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD=maximum
@@ -112,7 +125,11 @@ case "$( uname )" in                #(
   NONSTOP* )        nonstop=true ;;
 esac
 
+<<<<<<< HEAD
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+=======
+CLASSPATH="\\\"\\\""
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
 
 
 # Determine the Java command to use to start the JVM.
@@ -203,7 +220,11 @@ fi
 DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 
 # Collect all arguments for the java command:
+<<<<<<< HEAD
 #   * DEFAULT_JVM_OPTS, JAVA_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,
+=======
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
 #     and any embedded shellness will be escaped.
 #   * For example: A user cannot expect ${Hostname} to be expanded, as it is an environment variable and will be
 #     treated as '${Hostname}' itself on the command line.
@@ -211,7 +232,11 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 set -- \
         "-Dorg.gradle.appname=$APP_BASE_NAME" \
         -classpath "$CLASSPATH" \
+<<<<<<< HEAD
         org.gradle.wrapper.GradleWrapperMain \
+=======
+        -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" \
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
         "$@"
 
 # Stop when "xargs" is not available.

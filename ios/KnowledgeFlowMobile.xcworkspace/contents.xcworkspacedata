@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
+=======
+      location = "group:KnowledgeFlowMobile.xcodeproj">
+   </FileRef>
+   <FileRef
+>>>>>>> 1863d758f1e54ce64fb47576063f85b1a1e4c00d
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
